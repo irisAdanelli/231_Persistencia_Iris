@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.a231_persistencia_iris.MainActivity">
+
+    <TextView
+        android:id="@+id/etiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escribe algo"/>
+
+    <EditText
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp">
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center"
+        android:onClick="guardar"/>
+
+    <Button
+        android:text="Load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoad"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:onClick="recuperar"/>
+</LinearLayout>
+</LinearLayout>
